@@ -13,6 +13,15 @@ Notice, you need client and server runs concurrently in different terminal sessi
 
 ## Client-side usage(PORT: 3000)
 
+### Env Variables
+Make Sure to Create a .env file in client directory and add appropriate variables in order to use the app.
+
+Essential Variables 
+REACT_APP_API_URL= example: localhost:3001/api
+REACT_APP_IMAGES_URL= example: localhost:3001/images/
+REACT_APP_CRYPT_SECRET_KEY= This have to be same the server variable
+
+
 (You need to add something in .env, api url and other things)
 ```terminal
 $ cd client          // go to client folder
@@ -23,11 +32,30 @@ $ npm run start        // run it locally
 $ npm run start // this will run the files in docs, this behavior is exactly the same how gh-pages will run your static site
 ```
 
-## Server-side usage(PORT: 3001)
+## Server-side usage
 
 ### Prepare your secret
 
 (You need to add something in .env to connect to MongoDB and other things)
+
+### Env Variables
+Make Sure to Create a .env file in server directory and add appropriate variables in order to use the app.
+
+Essential Variables 
+PORT=
+MONGO_URI=
+RESET_PASSWORD_EXPIRE=
+JWT_EXPIRE=
+JWT_SECRET_KEY=
+JWT_REFRESH_SECRET_KEY=
+JWT_REFRESH_EXPIRE=
+JWT_COOKIE_EXPIRE=
+SMTP_USER=
+SMTP_PASSWORD=
+SMTP_HOST=
+SMTP_PORT=
+CRYPT_SECRET_KEY=
+
 
 ### Start
 

@@ -1,0 +1,18 @@
+.comment-container{
+  width:100%;
+  padding:0.5em 0px;
+  display: flex;
+  flex-direction: row;
+}
+.comment-container .comment-user-box{
+  font-weight: 600;  
+}
+.comment-container .comment-user-box img{
+  width:30px;
+}
+.comment-container .comment-text-box{
+  margin-left: 1em;
+}
+.comment-container .flex-space{
+  flex-grow: 1;
+}

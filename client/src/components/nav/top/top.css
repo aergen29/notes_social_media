@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Edu+SA+Beginner:wght@800&display=swap');
+
+.top-nav-container h3 {
+  text-align: center;
+  letter-spacing: 1em;
+  font-family: 'ADLaM Display', cursive;
+  background-color: rgba(var(--material9RGB), 0.6);
+  padding: 8px 16px;
+  border-radius: 0.25rem;
+  border-top: 1px solid rgba(var(--material1RGB), 0.4) ;
+  border-bottom: 1px solid rgba(var(--material1RGB), 0.4) ;
+  color:white;
+}
+
+.top-nav-container {
+  padding: 10px 30px;
+}
+
+.top-nav-container h1 {
+  text-align: center;
+  font-family: 'Edu SA Beginner', cursive;
+  letter-spacing: 0.5em;
+  border-radius: 0.3em;
+  padding: 0.33em 0em;
+}
+
+.top-nav-container a {
+  text-decoration: none;
+  color: var(--material9);
+}
+
+@media (prefers-color-scheme: dark) {
+  .top-nav-container a {
+    color: var(--material0);
+  }
+  .top-nav-container h3 {
+    background-color: rgba(var(--material5RGB), 0.6);
+    color:black;
+  }
+}

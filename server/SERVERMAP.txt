@@ -1,0 +1,30 @@
+API
+    AUTH
+        LOGIN   X
+        LOGOUT  X
+    
+    USER
+        PROFILE         X
+        VISIT           X
+        FORGETPASSWORD  X
+        REMOVE          X
+        EDIT            X
+        SIGUNP          X
+
+
+    NOTE
+        NEW             X
+        EDIT            X
+        GET             X
+        REMOVE          X
+
+    
+    RELATIONSHIP
+        LIKE            X
+        UNLIKE          X
+        SAVE            X
+        UNSAVE          X
+        NEWCOMMENT      X
+        REMOVECOMMENT   X
+        FOLLOW          X
+        UNFOLLOW        X

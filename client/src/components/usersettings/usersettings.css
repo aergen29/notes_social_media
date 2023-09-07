@@ -1,0 +1,29 @@
+.user-settings-container{
+padding-top: 30px ;
+}
+.user-settings-container .row .input-box{
+  padding: 16px 8px;
+}
+.user-settings-container .row .input-box input[type="checkbox"]{
+  margin-left: 0.255rem;
+}
+.user-settings-container .row .button-box,.user-settings-container .row .button-box button{
+  width:99%;
+  text-align: center;
+}
+.user-settings-container .input-box img{
+  width:50%;
+  margin-left: 25%;
+  margin-bottom: 1em;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .user-settings-container .row .input-box input, .user-settings-container .row .input-box textarea{
+    background-color: black;
+    color:var(--material0);
+  }
+  .user-settings-container .row .input-box input::placeholder, .user-settings-container .row .input-box textarea::placeholder{
+    color:rgba(var(--material0RGB),0.5);
+  }
+}

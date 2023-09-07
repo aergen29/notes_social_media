@@ -1,0 +1,75 @@
+.signupContainer .row {
+  padding-top: 50px;
+  max-width: 100% !important;
+}
+
+.signupContainer .row form .wrong-input{
+  box-shadow:0px 10px 21px -3px rgba(220,53,69, 0.5);
+}
+.signupContainer .row form input{
+  box-shadow:0px 10px 21px -3px rgba(25, 135, 84, 0.4);
+}
+
+.signupContainer .row form div button {
+  width: 100%;
+}
+
+.signupContainer .left-box {
+  padding: 40px 0px 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupContainer .form-box .messages-box {
+  margin-top: 10px;
+}
+
+.signupContainer .form-box .messages-box a {
+  text-decoration: none;
+}
+
+.signupContainer .form-box .messages-box div {
+  padding: 15px 0px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.signupContainer .form-box .messages-box div a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:767px) {
+  .signupContainer .left-box {
+    display: none;
+  }
+  .signupContainer .col-md-4{
+    margin:auto;
+  }
+  .signupContainer .row{
+    margin:auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .signupContainer {
+    background-color: black;
+    color: white;
+  }
+
+  .signupContainer input {
+    background-color: black;
+    color: white;
+  }
+
+  .signupContainer input::placeholder {
+    color: gray;
+  }
+
+  .signupContainer input:focus {
+    background-color: black;
+    color: white;
+  }
+}

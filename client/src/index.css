@@ -1,0 +1,46 @@
+:root {
+  --material0: #E0F2F1;
+  --material1: #B2DFDB;
+  --material2: #80CBC4;
+  --material3: #4DB6AC;
+  --material4: #26A69A;
+  --material5: #009688;
+  --material6: #00897B;
+  --material7: #00796B;
+  --material8: #00695C;
+  --material9: #004D40;
+  --material0RGB: 224, 242, 241;
+  --material1RGB: 178, 223, 219;
+  --material2RGB: 128, 203, 196;
+  --material3RGB: 77, 182, 172;
+  --material4RGB: 38, 166, 154;
+  --material5RGB: 0, 150, 136;
+  --material6RGB: 0, 137, 123;
+  --material7RGB: 0, 121, 107;
+  --material8RGB: 0, 105, 92;
+  --material9RGB: 0, 77, 64;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* a:b; */
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--material1);
+}
+
+img{
+  border-radius: 0.255rem;
+  aspect-ratio: 1 / 1 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black !important;
+    color: var(--material0) !important;
+  }
+}

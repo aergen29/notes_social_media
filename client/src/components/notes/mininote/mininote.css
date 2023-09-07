@@ -1,0 +1,102 @@
+
+.mini-note-container {
+  width: 32.2%;
+  display: inline-block;
+}
+
+.mini-note-container .card{    
+  background-color: rgba(var(--material2RGB), 0.3);
+  margin-left: 1%;
+  margin-top: 10px;
+  padding: 7px 12px;
+  border:0px;
+  border-radius:0.61rem;
+}
+
+
+.mini-note-container .card-body a {
+  text-decoration: none;
+}
+
+
+.mini-note-container .card-body .relations .like-box .liked path {
+  color: rgb(182, 3, 3);
+}
+
+.mini-note-container .card-body .relations {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+}
+.mini-note-container .card-body .relations .flex-space {
+  flex-grow: 8;
+}
+
+.mini-note-container .card-body .relations div {
+  margin-right: 10px;
+}
+
+
+.mini-note-container .card-body .relations a{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color:black;
+}
+
+.mini-note-container .card-body .relations a .card-title {
+  font-size: 0.6em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mini-note-container .card-body  .relations a .card-title img {
+  height: 30px;
+}
+
+.mini-note-container .note-link{
+  display: block;
+  margin-bottom: 20px;
+  color:cornflowerblue;
+}
+
+@media screen and (min-width:2250px) {
+  .mini-note-container {
+    width: 24%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1700px) {
+  .mini-note-container {
+    width: 48.75%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .mini-note-container {
+    width: 100%;
+    display: inline-block;
+  }
+  .mini-note-container .card{
+    margin:0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius:1em ;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .mini-note-container, .mini-note-container * {
+    color: var(--material0);
+  }
+  .mini-note-container .card{    
+    background-color: rgba(var(--material9RGB), 0.3);
+  }
+  .mini-note-container .card-body .relations a{
+    color:var(--material0);
+  }
+}

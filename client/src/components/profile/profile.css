@@ -1,0 +1,102 @@
+.profile-container .profile-background{
+  background-color: white;
+  width: 100%;
+  height: 180px;
+  border-radius: 0.255rem;
+}
+.profile-container .image-name-follow-row{
+  margin:0px;
+  padding: 0px;
+  z-index: 999;
+  margin-top: -75px;
+}
+
+.follow-box button *{
+  aspect-ratio: 1/1;
+}
+
+
+
+.profile-container .image-name-follow-row .image-name-container{
+  display: flex;
+}
+
+
+.profile-container .image-name-follow-row .image-name-container .image-box img{
+  width:150px;
+  border-radius: 0.255rem;
+}
+
+
+.profile-container .image-name-follow-row .image-name-container .name-box{
+  margin-left:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.profile-container .image-name-follow-row .follow-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+.profile-container .image-name-follow-row .follow-container div{
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.profile-container .image-name-follow-row .follow-container div strong{
+  font-size: 24px;
+}
+
+
+.profile-container .bio-row{
+  margin-top: 2em;
+  display: flex;
+}
+
+.profile-container .bio-row p{
+  width:auto;
+  flex-grow: 6;
+  display: inline-block;
+}
+
+.profile-container .bio-row .follow-box{
+  flex-grow: 1;
+  width:auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-container .notes-row{
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width:767px) {
+  .profile-container .image-name-follow-row .follow-container{
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+
+  .profile-container .bio-row p{
+    width:100%;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .profile-container{
+    background: none;
+    color: var(--material0);
+  }
+  .profile-container .profile-background{
+    background-color: black;
+  }
+  .profile-container .bio-row *{
+    width: auto !important;
+  }
+}

@@ -1,0 +1,44 @@
+.new-note-container{
+  margin-top: 20px;
+}
+.new-note-container .ql-tooltip{
+  z-index: 99;
+}
+.new-note-container .ql-editor{
+  min-height: 100px;
+}
+.new-note-container .buttons-box{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.new-note-container .buttons-box button{
+  margin-right: 10px;
+}
+.new-note-container .alert{
+  color:black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .new-note-container{
+    background-color: black;
+    color:white;
+  }
+  .new-note-container .ql-tooltip,
+  .new-note-container .ql-tooltip a{
+    background-color: black !important;
+    color:white !important;
+  }
+  .new-note-container .ql-tooltip{
+    border:1px solid rgba(var(--material0RGB), 0.5) !important;
+    border-radius: 0.255rem;
+  }
+  .new-note-container .ql-tooltip input{
+    border:1px solid rgba(var(--material0RGB), 0.5) !important;
+    border-radius: 0.255rem;
+  }
+  .new-note-container .checkbox-box .didntcheck path {
+    color:rgba(255, 255, 255, 0.7);
+  }
+}

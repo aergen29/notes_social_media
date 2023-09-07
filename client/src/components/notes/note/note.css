@@ -1,0 +1,123 @@
+.note-container .row {
+  max-width: 100%;
+  margin: 0;
+}
+.note-container  .left-col{
+  padding: 1em 0em 0em 0em;
+  position: fixed;
+  z-index: 10;
+}
+.note-container .col-lg-9{
+  margin: 0;
+  margin-left: auto;
+}
+
+
+.note-container .card {
+  background-color: rgba(var(--material2RGB), 0.3);
+  margin-left: 1%;
+  margin-top: 10px;
+  padding: 7px 12px;
+  border: 0px;
+  border-radius: 0.61rem;
+}
+.note-container .card .note-title-box{
+  display: flex;
+}
+.note-container .card .note-title-box .user-box{
+  flex-grow: 1;
+}
+.note-container .card .note-title-box .text-danger * {
+  color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important;
+}
+
+.note-container .card-body a {
+  text-decoration: none;
+}
+
+.note-container .card-body .relations .like-box .liked path {
+  color: rgb(182, 3, 3);
+}
+
+.note-container .card-body .relations {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+}
+
+.note-container .card-body .relations .flex-space {
+  flex-grow: 8;
+}
+
+.note-container .card-body .relations div {
+  margin-right: 10px;
+}
+
+
+.note-container .card-body .user-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: black;
+}
+
+.note-container .card-body .user-box .card-title {
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.note-container .card-body .user-box .card-title img {
+  height: 50px;
+}
+
+.note-container .card-body .card-text {
+  margin-top: 30px;
+}
+
+.note-container .note-link {
+  display: block;
+  margin-bottom: 20px;
+  color: cornflowerblue;
+}
+.note-container .new-comment-box{
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.note-container .new-comment-box input {
+  background: none;
+}
+
+.note-container .new-comment-box button {
+  margin-left: 1em;
+  font-weight: 600;
+  color: var(--material9);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .note-container,
+  .note-container * {
+    color: var(--material0);
+  }
+  .alertify *{
+    color: black !important;
+  }
+
+  .note-container .card {
+    background-color: rgba(var(--material9RGB), 0.3);
+  }
+
+  .note-container .card-body .relations a {
+    color: var(--material0);
+  }
+
+  .note-container .new-comment-box input {
+    color: var(--material0);
+  }
+
+  .note-container .new-comment-box input::placeholder {
+    color: rgba(var(--material0RGB), 0.6);
+  }
+}

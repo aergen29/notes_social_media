@@ -1,0 +1,19 @@
+.profilemain-container .row{
+  max-width: 100%;
+  margin: 0;
+}
+.profilemain-container .col-lg-9{
+  margin: 0;
+  margin-left: auto;
+}
+.profilemain-container .left-col{
+  padding: 1em 0em 0em 0em;
+  position: fixed;
+  z-index: 99;
+}
+
+@media only screen and (max-width:991px) {
+  .profilemain-container .col-lg-9{
+    padding-bottom: 70px;
+  }
+}

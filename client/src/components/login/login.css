@@ -1,0 +1,76 @@
+.loginContainer .row {
+  padding-top: 50px;
+  max-width: 100% !important;
+}
+
+
+.loginContainer .row form .wrong-input {
+  box-shadow: 0px 10px 21px -3px rgba(220, 53, 69, 0.5);
+}
+
+.loginContainer .row form input {
+  box-shadow: 0px 10px 21px -3px rgba(25, 135, 84, 0.4);
+}
+
+.loginContainer .row form div button {
+  width: 100%;
+}
+
+.loginContainer .left-box {
+  padding: 40px 0px 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer .form-box .messages-box {
+  margin-top: 10px;
+}
+
+.loginContainer .form-box .messages-box a {
+  text-decoration: none;
+}
+
+.loginContainer .form-box .messages-box div {
+  padding: 15px 0px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.loginContainer .form-box .messages-box div a {
+  text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+  .loginContainer .left-box {
+    display: none;
+  }
+  .loginContainer .col-md-4{
+    margin:auto;
+  }
+  .loginContainer .row{
+    margin:auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .loginContainer {
+    background-color: black;
+    color: white;
+  }
+
+  .loginContainer input {
+    background-color: black;
+    color: white;
+  }
+
+  .loginContainer input::placeholder {
+    color: gray;
+  }
+
+  .loginContainer input:focus {
+    background-color: black;
+    color: white;
+  }
+}

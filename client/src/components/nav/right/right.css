@@ -1,0 +1,38 @@
+.right-container{
+  margin-top: 30px;
+}
+.right-container .user-box{
+  width: 100%;
+  margin-top: 15px;
+}
+.right-container .user-box a{
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+.right-container .user-box a img{
+  width:40px;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  .right-container, .right-container * {
+    color: black;
+  }
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  .right-container, .right-container * {
+    color: var(--material0);
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .right-container{
+    display:none;
+  }
+}

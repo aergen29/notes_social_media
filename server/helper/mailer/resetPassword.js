@@ -1,8 +1,9 @@
 const sendEmail = require("./mailer");
+const {CLIENT_URL} = process.env;
 
 const sendMail = async (resetPasswordToken,user)=>{
 
-    const resetPasswordUrl = `http://localhost:3000/resetpassword/${resetPasswordToken}`;
+    const resetPasswordUrl = `${CLIENT_URL}/resetpassword/${resetPasswordToken}`;
     const emailTemplate = `
     <div style="text-align:center;">
     <h3>Hello ${user.name} (${user.username})</h3>

@@ -1,4 +1,5 @@
 const sendEmail = require("./mailer");
+const {CLIENT_URL} = process.env;
 
 const sendHelloMail = async (user)=>{
 
@@ -10,7 +11,7 @@ const sendHelloMail = async (user)=>{
     <h3 style="color:darkred;">Welcome to NOTES.</h3>
     <br/>
     <br/>
-    <a style="color:gray; text-decoration:none;" href="http://localhost:3000">Notes</a>
+    <a style="color:gray; text-decoration:none;" href="${CLIENT_URL}">Notes</a>
     </div>
     `;
 

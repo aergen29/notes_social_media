@@ -39,7 +39,7 @@ const Left = () => {
                     <GiHamburgerMenu />
                   </DropdownToggle>
                   <DropdownMenu>
-                    <Link to='/29apo29'><DropdownItem>Profile</DropdownItem></Link>
+                    <Link to={sessionState.username}><DropdownItem>Profile</DropdownItem></Link>
                     <Link to="/settings"><DropdownItem>Settings</DropdownItem></Link>
                     <DropdownItem onClick={logoutFunc} style={{ color: 'red' }}>Log out</DropdownItem>
                   </DropdownMenu>

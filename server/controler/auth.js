@@ -117,7 +117,7 @@ const refresh = asyncHandler(async (req, res, next) => {
 
     user.saved.reverse();
     req.result = { status: true, body: { token: newToken, user } };
-    return next();
+    next();
   } catch (err) {
     throw new CustomError("Please login again", 401);
   }
